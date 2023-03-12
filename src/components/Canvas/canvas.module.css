@@ -1,0 +1,60 @@
+.canvas {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.empty {
+  border: 2px dashed #c4c4c4;
+  border-radius: 6px;
+}
+
+.emptyFiller {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+.emptyFiller.dragOver {
+  background-color: #f0f9ff;
+}
+.emptyTitle {
+  color: #5d5fef;
+  margin: 12px 0 4px;
+}
+.emptyText {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.pasteInto {
+  position: relative;
+  margin: 4px 0;
+  background-color: #5d5fef;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+}
+
+.pasteInto::before,
+.pasteInto::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  transform: rotate(45deg);
+  background-color: #5d5fef;
+  top: -2px;
+}
+
+.pasteInto::before {
+  left: -2px;
+}
+.pasteInto::after {
+  right: -2px;
+}

@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  padding-top: 39px;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button{
+  cursor: pointer;
+}

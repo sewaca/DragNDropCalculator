@@ -1,0 +1,12 @@
+.commonWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mainWrapper{
+  display: grid;
+  grid-template-columns: 240px 244px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}

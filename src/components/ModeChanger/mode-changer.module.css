@@ -1,0 +1,27 @@
+.wrapper {
+  padding: 1px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  display: flex;
+
+  position: relative;
+}
+.wrapper button {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+.icon {
+  margin-right: 8px;
+  font-size: 0px;
+}
+.selected {
+  border: 1px solid #e2e3e5;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.selected .icon svg {
+  stroke: #5d5fef;
+}
